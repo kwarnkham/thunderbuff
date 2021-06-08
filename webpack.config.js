@@ -8,6 +8,11 @@ const config = {
   entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
+    library: {
+      name: "thunderbuff",
+      type: "umd",
+    },
+    filename: "index.js",
   },
   plugins: [
     // Add your plugins here
